@@ -13,6 +13,7 @@
 
 #pragma comment(lib, "Winmm.lib")
 
+//c++ verzion 17 iz needed
 //zet the zcreen zize to max while it loadz
 int main(int argc, char* argv[]) {
     // enter your folder path for the txt filez made in python
