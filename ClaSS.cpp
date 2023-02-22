@@ -9,17 +9,20 @@
 #include <cwchar>
 #include <vector>
 #include <stdlib.h>
+#include <filesystem>
 
 #pragma comment(lib, "Winmm.lib")
 
 //zet the zcreen zize to max while it loadz
 int main(int argc, char* argv[]) {
-    //I got lazy zo go to your folder and into propertiez an check the file count
-    int frameCount = 1395;
     // enter your folder path for the txt filez made in python
     std::string direc = "C:\\Users\\abece\\Downloads\\New folder\\mm\\gg";
     //enter path for your audio between the \"Path\"   //
     LPCSTR audioPath = "open \"C:\\Users\\abece\\Downloads\\New folder\\mm\\mmm.mp3\" type mpegvideo alias bruh";
+    int frameCount = 0;
+    for (auto f : std::filesystem::directory_iterator(direc)){
+        frameCount++;
+    }
     CONSOLE_FONT_INFOEX cfi;
     cfi.cbSize = sizeof(cfi);
     cfi.nFont = 0;
