@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
     //enter path for your audio between the \"Path\"   //
     LPCSTR audioPath = "open \"C:\\Users\\abece\\Downloads\\New folder\\mm\\mmm.mp3\" type mpegvideo alias bruh";
     int frameCount = 0;
-    for (auto f : std::filesystem::directory_iterator(direc)){
+    for (auto& f : std::filesystem::directory_iterator(direc)){
         frameCount++;
     }
     CONSOLE_FONT_INFOEX cfi;
