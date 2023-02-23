@@ -44,7 +44,11 @@ int main(int argc, char* argv[]) {
             std::string sTotal;
             for (int i = 0; i < 200; i++) {
                 std::getline(f, s);
-                sTotal += s + "\n";
+                if (i != 199) { 
+                    sTotal += s + "\n"; 
+                } else {
+                    sTotal += s;
+                }
             }
             f.close();
             bronya.push_back(sTotal);
