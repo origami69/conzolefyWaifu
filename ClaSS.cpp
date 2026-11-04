@@ -16,8 +16,8 @@
 // Add-WindowsCapability -Online -Name Microsoft.Windows.Console.Legacy~~~~
 //you can also change it by pressing command prompt then right click the top part and click settings and changing deafult terminal application to Windows Console Host and saving 
 int main(int argc, char* argv[]) {
-    HWND hWnd = GetConsoleWindow();
-    ShowWindow(hWnd, SW_SHOWMAXIMIZED);
+    //set screen to max here have this timer to help u
+    Sleep(100);
     // enter your folder path for the txt filez made in python
     std::string direc = "C:\\Users\\art\\Downloads\\gg";
     //enter path for your audio between the \"Path\"   //
