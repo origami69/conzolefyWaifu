@@ -5,10 +5,13 @@ import numpy
 
 # my s key iz broken zo i will uze z
 def main():
+    #select x and y diemensions you want
+    x = 379
+    y = 200
     # enter the directory where you want imagez to be delivered
     direc = '.\\gg\\'
     # enter your mp4 file
-    videoDirec = ".\\[MMD C4D]Hip Sway TikTok Dance--miku.mp4"
+    videoDirec = ".\\【MMD】Phrolova ❤  Forgive Me 【Wuthering Waves】【60fps】.mp4"
     cam = cv2.VideoCapture(videoDirec)
     try:
         if not os.path.exists(direc):
@@ -21,7 +24,7 @@ def main():
         if ret:
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             (thresh, blackAndWhiteImage) = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
-            rez = cv2.resize(blackAndWhiteImage, (379, 200))
+            rez = cv2.resize(blackAndWhiteImage, (x, y))
             imageOp = Image.fromarray(rez)
             width, height = imageOp.size
             pixel_values = list(imageOp.getdata())
