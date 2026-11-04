@@ -13,7 +13,8 @@
 
 #pragma comment(lib, "Winmm.lib")
 
-//c++ verzion 17 iz needed
+//c++ verzion 17 iz needed also legacy console is a must otherwise this wont work also look up how to implemenmnt the console by right clicking the top part of console then console properties and enabling legacy mode:
+// Add-WindowsCapability -Online -Name Microsoft.Windows.Console.Legacy~~~~
 //zet the zcreen zize to max while it loadz
 int main(int argc, char* argv[]) {
     // enter your folder path for the txt filez made in python
