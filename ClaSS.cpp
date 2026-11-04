@@ -14,6 +14,7 @@
 
 //c++ verzion 17 iz needed also legacy console is a must otherwise this wont work also look up how to implemenmnt the console by right clicking the top part of console then console properties and enabling legacy mode:
 // Add-WindowsCapability -Online -Name Microsoft.Windows.Console.Legacy~~~~
+//you can also change it by pressing command prompt then right click the top part and click settings and changing deafult terminal application to Windows Console Host and saving 
 int main(int argc, char* argv[]) {
     // enter your folder path for the txt filez made in python
     std::string direc = "C:\\Users\\art\\Downloads\\gg";
